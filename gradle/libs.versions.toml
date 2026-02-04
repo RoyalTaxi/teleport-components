@@ -1,14 +1,18 @@
 [versions]
-agp = "8.13.0"
+agp = "8.11.1"
 kotlin = "2.2.20"
 core-ktx = "1.15.0"
-kotlin-serialization = "1.9.0"
+compose-multiplatform = "1.10.0-alpha02"
+landscapistCoil3 = "2.8.3"
 
 [libraries]
+teleport-design = { module = "uz.teleport:design", version = "1.0.0" }
+teleport-resources = { module = "uz.teleport:resources", version = "1.0.0" }
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization" }
+landscapist-coil3 = { module = "com.github.skydoves:landscapist-coil3", version.ref = "landscapistCoil3" }
 
 [plugins]
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

@@ -1,4 +1,4 @@
-rootProject.name = "yalla-firebase"
+rootProject.name = "teleport-components"
 
 pluginManagement {
     repositories {
@@ -14,14 +14,14 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            url = uri("https://maven.pkg.github.com/RoyalTaxi/yalla-firebase")
+            url = uri("https://maven.pkg.github.com/RoyalTaxi/teleport-design")
             credentials {
                 username = providers.gradleProperty("gpr.user").orNull ?: System.getenv("GITHUB_ACTOR")
                 password = providers.gradleProperty("gpr.key").orNull ?: System.getenv("GITHUB_TOKEN")
             }
         }
         maven {
-            url = uri("https://maven.pkg.github.com/RoyalTaxi/yalla-resources")
+            url = uri("https://maven.pkg.github.com/RoyalTaxi/teleport-resources")
             credentials {
                 username = providers.gradleProperty("gpr.user").orNull ?: System.getenv("GITHUB_ACTOR")
                 password = providers.gradleProperty("gpr.key").orNull ?: System.getenv("GITHUB_TOKEN")
